@@ -6,14 +6,19 @@
     <body>
         <div class="container">
             <h1>The Magic 8 Ball</h1>
-            <input type="text" class="question-input" placeholder="Ask your question.." />
-            <button onClick="shakeBall()" class="shake-btn">Shake the 8 Ball</button>
-
             <div class="eight-ball">
                 <div id="eight-ball-message" class="eight-ball-message">
-                    test
+                    enter question below
                 </div>
+                <input id="the-question" type="text" class="question-input" placeholder="Ask a question.." />
+             <button onClick="shakeBall()" class="shake-btn" id="shake-button">Shake the 8 Ball</button>
+
             </div>
+
+            <hr/>
+            <p id="notifications">
+                <b>the notifications</b><br/><br/>               
+            </p>
         </div>
         <script type="text/javascript" src="main.js"></script>
     </body>

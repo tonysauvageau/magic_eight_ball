@@ -11,13 +11,14 @@ h1 {
 }
 
 .question-input {
-    width:50%;
+    width:90%;
     padding:15px 10px;
     background:rgba(50,50,50,0.1);
     display: block;
     margin:15px auto;
     border:0;
-    font-size:2rem;
+    font-size:1rem;
+    color:#FFF;
 }
 
 .shake-btn {
@@ -38,7 +39,7 @@ h1 {
     background: -webkit-linear-gradient(to left, #000000 , #434343); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #000000 , #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius:50%;
-    padding:200px 50px;
+    padding:200px 100px;
     width:30%;
     display: block;
     margin:20px auto;
@@ -56,4 +57,24 @@ h1 {
     text-transform: uppercase;
     border:5px solid rgba(255,255,255,0.3);
     border-radius:5px;
+}
+
+#notifications {
+    background:rgba(0,0,0,0.9);
+    position:fixed;
+    top:10px; 
+    right:15px;
+    width:25%;
+    padding:15px 10px;
+    color:rgba(255,255,255,0.8);
+    font-weight:300;
+    font-size:1rem;
+}
+
+#notifications .green-text {
+    color:#76ff03;
+}
+
+#notifications .new_answer {
+    color:#ccff90;
 }
