@@ -1,0 +1,59 @@
+body {
+    font-family: 'Arial';
+}
+.container {
+    width:1024px;
+    margin:0 auto;
+}
+h1 {
+    font-size:3rem;
+    text-align: center;
+}
+
+.question-input {
+    width:50%;
+    padding:15px 10px;
+    background:rgba(50,50,50,0.1);
+    display: block;
+    margin:15px auto;
+    border:0;
+    font-size:2rem;
+}
+
+.shake-btn {
+    padding:10 25px;
+    text-align:center;
+    text-size: 2rem;
+    background: rgba(0,0,0,0.5);
+    border-radius:5px 0 5px 0;
+    border:0;
+    font-weight:600;
+    color:#FFF;
+    display:block;
+    margin:0 auto;
+}
+
+.eight-ball {
+    background: #000000; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #000000 , #434343); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #000000 , #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius:50%;
+    padding:200px 50px;
+    width:30%;
+    display: block;
+    margin:20px auto;
+}
+
+.eight-ball-message {
+    padding:10px 15px;
+    background: #614385; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #614385 , #516395); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #614385 , #516395); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */      
+    border:1px solid #333;
+    color: white;
+    text-align:center;
+    font-weight: 600;
+    text-transform: uppercase;
+    border:5px solid rgba(255,255,255,0.3);
+    border-radius:5px;
+}
