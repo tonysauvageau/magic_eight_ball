@@ -24,6 +24,8 @@ function shakeBall()
     var add_answer = theQuestion.includes("add_answer:");
     var clear_answer = theQuestion.includes("clear_answers");
     var clear_history = theQuestion.includes("clear_history");
+    var show_new_answer = theQuestion.includes("new_answers");
+    
 
     var randomNumber = Math.round(Math.random() * (theMessages.length - 0) + 0);
 
@@ -52,6 +54,10 @@ function shakeBall()
 
         notifications.innerHTML= '';
         theNotification = '<span class="green-text"><small><i>Cleared history</i></small></span>';
+        addNotification(theNotification);
+
+    }else if(show_new_answer){
+        theNotification = '<span class="green-text"><b>New Answers</b><br/><small><i>'+new_answers.join(', ')+'</i></small></span>';
         addNotification(theNotification);
 
     } else {
