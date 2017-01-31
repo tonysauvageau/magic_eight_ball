@@ -34,8 +34,10 @@ function shakeBall()
         {
             newAnswers = defaultAnswers;
         }
+        console.log(newAnswers);
         newAnswers.push(theQuestion.replace('add_answer: ',''));
         new_answers.push(theQuestion.replace('add_answer: ',''));
+        console.log(newAnswers);
         addNotification(theNotification);
     } 
     else if(clear_answer) {
@@ -72,5 +74,12 @@ document.getElementById("the-question").addEventListener("keyup", function(event
     event.preventDefault();
     if ( event.keyCode === 13 ) {
         document.getElementById("shake-button").click();
+    }
+});
+
+document.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if ( event.keyCode === 27) {
+    document.getElementById('the-question').value = null;
     }
 });
